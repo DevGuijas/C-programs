@@ -1,15 +1,7 @@
-/******************************************************************************
-
-                            Online C Compiler.
-                Code, Compile, Run and Debug C program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <stdio.h>
 #include <stdlib.h>
 
-int GravadorDeArquivos(){
+int GravadorDeArquivos(){ //Maximum limitation of 30 characters.
   FILE *pont_arq;
   char palavra1[30];
   char palavra2[30];
@@ -30,7 +22,7 @@ int GravadorDeArquivos(){
   return 1;
   }
  
-  printf("Digite até 10 itens para sua lista de compras: \n");
+  printf("Digite até 10 itens para sua lista de compras: \n"); //Message of listage.
   printf("Item 1: ");
   scanf("%s", palavra1);
   
@@ -61,18 +53,18 @@ int GravadorDeArquivos(){
   printf("Item 10: ");
   scanf("%s", palavra10);
  
-  fprintf(pont_arq, "%s", "Lista: \n");
+  fprintf(pont_arq, "%s", "Lista de compras: \n"); //Notepad created (Here for down).
   fprintf(pont_arq, "%s", "\n");
-  fprintf(pont_arq, "- %s\n", palavra1);
-  fprintf(pont_arq, "- %s\n", palavra2);
-  fprintf(pont_arq, "- %s\n", palavra3);
-  fprintf(pont_arq, "- %s\n", palavra4);
-  fprintf(pont_arq, "- %s\n", palavra5);
-  fprintf(pont_arq, "- %s\n", palavra6);
-  fprintf(pont_arq, "- %s\n", palavra7);
-  fprintf(pont_arq, "- %s\n", palavra8);
-  fprintf(pont_arq, "- %s\n", palavra9);
-  fprintf(pont_arq, "- %s", palavra10);
+  fprintf(pont_arq, "1 - %s\n", palavra1);
+  fprintf(pont_arq, "2 - %s\n", palavra2);
+  fprintf(pont_arq, "3 - %s\n", palavra3);
+  fprintf(pont_arq, "4 - %s\n", palavra4);
+  fprintf(pont_arq, "5 - %s\n", palavra5);
+  fprintf(pont_arq, "6 - %s\n", palavra6);
+  fprintf(pont_arq, "7 - %s\n", palavra7);
+  fprintf(pont_arq, "8 - %s\n", palavra8);
+  fprintf(pont_arq, "9 - %s\n", palavra9);
+  fprintf(pont_arq, "10 - %s", palavra10);
 
   fclose(pont_arq);
  
